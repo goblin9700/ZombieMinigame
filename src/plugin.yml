@@ -1,0 +1,24 @@
+name: ZombieMinigame
+version: 1.4
+description: ZombieMinigame
+author: wlan222
+
+main: com.wlan222.ZombieMinigame.ZombieMinigame
+depend: [WorldEdit, WorldGuard, WGRegionEvents, ProtocolLib]
+softdepend: [Vault]
+
+commands:
+  zs:
+    description: Join the next Zombiegame
+  zperks:
+    description: Buy perks for the next game
+  zadmin:
+    description: Admin
+  zr:
+    description: Zombie Radar Perk
+  zleave:
+    description: Leave a lobby 
+
+
+
+

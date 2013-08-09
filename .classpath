@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/bukkit-1.6.2-R0.1.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/DisguiseCraft.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/iDisguise_v2.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/LibsDisguises.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/Vault.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/WGRegionEvents.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/WorldEdit.jar"/>
+	<classpathentry kind="lib" path="/home/jan/Arbeitsfläche/WorldGuard.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
