@@ -7,8 +7,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import com.mewin.WGRegionEvents.events.RegionEnterEvent;
-import com.mewin.WGRegionEvents.events.RegionLeaveEvent;
+//import com.mewin.WGRegionEvents.events.RegionEnterEvent;
+//import com.mewin.WGRegionEvents.events.RegionLeaveEvent;
 import com.wlan222.ZombieMinigame.Lobby;
 import com.wlan222.ZombieMinigame.Perks;
 import com.wlan222.ZombieMinigame.manager.LobbyManager;
@@ -68,12 +68,12 @@ public class ZombieGamePlayerListener implements Listener {
 	}
 
 	@EventHandler
-	public void onRegionLeave(RegionLeaveEvent e) {
+	public void onRegionLeave(me.fromgate.reactions.event.RegionLeaveEvent e) {
 		if (!lm.players.containsKey(e.getPlayer())) {
 			return;
 		}
 		Lobby l = lm.players.get(e.getPlayer());
-		if (e.getRegion().getId().equals(l.getRegion()) && e.isCancellable())
+		if (e.getRegion().equalsIgnoreCase(l.getRegion()) && e.isCancelled())
 
 		{
 			e.setCancelled(true);
@@ -83,11 +83,12 @@ public class ZombieGamePlayerListener implements Listener {
 	}
 
 	@EventHandler
-	public void onRegionEnter(RegionEnterEvent e) {
-		if (!lm.regions.containsKey(e.getRegion().getId())) {
+	public void onRegionEnter(me.fromgate.reactions.event.RegionEnterEvent e) {
+		if (!lm.regions.containsKey(e.getRegion())) {
 			return;
 		}
-		Lobby l = lm.regions.get(e.getRegion().getId());
+		//Lobby l = lm.regions.get(e.getRegion().getId());
+		Lobby l = lm.regions.get(e.getRegion());
 		if (l.isGameRunning() && !l.players.contains(e.getPlayer())) {
 			e.getPlayer()
 					.sendMessage(

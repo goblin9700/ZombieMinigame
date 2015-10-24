@@ -35,10 +35,10 @@ public class ZombieMinigame extends JavaPlugin {
 	private boolean useUpdater;
 
 	public void onEnable() {
-		if (!getConfig().isBoolean("metrics.enabled")) {
-			getConfig().set("metrics.enabled", true);
-
-		}
+//		if (!getConfig().isBoolean("metrics.enabled")) {
+//			getConfig().set("metrics.enabled", true);
+//
+//		}
 		if (!getConfig().isBoolean("updater.enabled")) {
 			getConfig().set("updater.enabled", true);
 

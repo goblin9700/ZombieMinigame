@@ -1,10 +1,10 @@
 name: ZombieMinigame
 version: 1.4
 description: ZombieMinigame
-author: wlan222
+author: wlan222, goblin9700
 
 main: com.wlan222.ZombieMinigame.ZombieMinigame
-depend: [WorldEdit, WorldGuard, WGRegionEvents, ProtocolLib]
+depend: [WorldEdit, WorldGuard, ProtocolLib, ReActions]
 softdepend: [Vault]
 
 commands:

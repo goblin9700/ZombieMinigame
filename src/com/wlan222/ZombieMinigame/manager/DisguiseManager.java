@@ -111,12 +111,12 @@ public class DisguiseManager {
 							dcAPI.newEntityID(),
 							pgDev.bukkit.DisguiseCraft.disguise.DisguiseType.Zombie));
 		} else {
-			me.libraryaddict.disguise.DisguiseAPI
-					.disguiseToAll(
-							p,
-							new me.libraryaddict.disguise.DisguiseTypes.MobDisguise(
-									me.libraryaddict.disguise.DisguiseTypes.DisguiseType.ZOMBIE,
-									false, true));
+//			me.libraryaddict.disguise.DisguiseAPI
+//					.disguiseToAll(
+//							p,
+//							new me.libraryaddict.disguise.DisguiseTypes.MobDisguise(
+//									me.libraryaddict.disguise.DisguiseTypes.DisguiseType.ZOMBIE,
+//									false, true));
 		}
 	}
 

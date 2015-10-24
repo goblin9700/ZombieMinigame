@@ -1,8 +1,8 @@
 package com.wlan222.ZombieMinigame.disguise;
 
 import me.libraryaddict.disguise.DisguiseAPI;
-import me.libraryaddict.disguise.DisguiseTypes.DisguiseType;
-import me.libraryaddict.disguise.DisguiseTypes.MobDisguise;
+import me.libraryaddict.disguise.disguisetypes.DisguiseType;
+import me.libraryaddict.disguise.disguisetypes.MobDisguise;
 
 import org.bukkit.entity.Player;
 
